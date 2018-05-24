@@ -1,0 +1,17 @@
+project.ext {
+     //versions
+
+}
+
+configurations {
+    compile.exclude module: 'spring-boot-starter-tomcat'
+    compile.exclude module: 'tomcat-jdbc'
+}
+
+dependencies {
+    // Spring Boot - Webflux
+    compile            group: 'org.springframework.boot',     name: 'spring-boot-starter-webflux'
+    
+    // Spring Boot Data MongoDB
+    compile 		   group: 'org.springframework.boot',     name: 'spring-boot-starter-data-mongodb-reactive'
+}
